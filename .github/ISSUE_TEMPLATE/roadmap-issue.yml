@@ -63,7 +63,7 @@ body:
       description: Recognizing that many Initiatives evolve incrementally, please include a brief scope of the Initiative timeline. Please include a target Named Release, with contingencies if necessary.
     validations:
       required: true
- - type: input
+  - type: input
     id: author
     attributes:
       label: Proposed By
