@@ -1,0 +1,32 @@
+# This workflow runs when an issue is created.
+# It displays a welcome message and tags the project managers
+
+name: Notify on newly created repo issues
+on:
+  issues:
+    types: [opened]
+jobs:
+  move_and_notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tag project managers
+        env:
+          URL: ${{ github.event.issue.comments_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl \
+            -X POST \
+            $URL \
+            -H "Content-Type: application/json" \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            --data '{ "body": "Thanks for your submission, @openedx/open-edx-project-managers will review shortly." }'
+
+# For future Slack alerting
+      # - name: Alert in Slack
+      #   id: slack
+      #   uses: slackapi/slack-github-action@v1.18.0
+      #   with:
+      #     channel-id: C02MB2TBKE3
+      #     slack-message: "Incoming GitHub request: ${{ github.event.issue.title }}\nAuthor: ${{ github.event.issue.user.login }}\nURL: ${{ github.event.issue.html_url }}"
+      #   env:
+      #     SLACK_BOT_TOKEN: ${{ secrets.SLACK_ISSUE_BOT_TOKEN }}
