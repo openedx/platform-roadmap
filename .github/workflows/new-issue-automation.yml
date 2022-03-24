@@ -6,7 +6,7 @@ on:
   issues:
     types: [opened]
 jobs:
-  move_and_notify:
+  notifications:
     runs-on: ubuntu-latest
     steps:
       - name: Tag project managers
