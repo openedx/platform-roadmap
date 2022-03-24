@@ -40,12 +40,14 @@ body:
     attributes:
       label: Milestones and/or Epics
       description: |
-        Any relevant background information about the Initiative. What key pieces of information are important for newcomers to understand about the nature of the problem or pain point, the current user experience, etc.
+        Any relevant background information about the Initiative. What key pieces of information are important for newcomers to understand about the nature of the problem or pain point, the current user experience, etc.  Please use the following format:
 
         **Milestone 1**: [Title]
         * [1-2 sentence abstract. Include key user stories if appropriate]
         * [Impact metric]
         * [Link to Epic where it may exist in GH, jira, etc]
+
+        **Milestone 2**: etc...
     validations:
       required: true
   - type: input
