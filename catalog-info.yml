@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 'platform-roadmap'
+  description: "This repository exists in order to hold tickets for the Open edX Platform Roadmap"
+  links:
+    - url: "http://github.com/openedx/platform-roadmap"
+      title: "Issue Tracker"
+      icon: "Issue"
+  annotations:
+spec:
+  owner: group: tcril-engineering
+  type: 'issue-tracker'
+  lifecycle: 'production'
