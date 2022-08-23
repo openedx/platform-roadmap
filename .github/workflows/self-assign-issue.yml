@@ -13,4 +13,4 @@ jobs:
       - uses: actions-ecosystem/action-add-assignees@v1
         with:
           github_token: ${{ secrets.github_token }}
-          assignees: ${{ github.event.issue.user.login }}
+          assignees: ${{ github.event.issue_comment.user.login }}
