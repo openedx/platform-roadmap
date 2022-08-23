@@ -1,0 +1,16 @@
+# This workflow runs when a comment is made on the ticket
+# If the comment starts with "assign me" it assigns the author to the
+# ticket
+
+name: Add newly created GitHub Request tickets to the tCRIL Engineering project board
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  add_assignee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions-ecosystem/action-add-assignees@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          assignees: ${{ github.event.issue.user.login }}
