@@ -13,8 +13,4 @@ jobs:
       - uses: actions-ecosystem/action-add-assignees@v1
         with:
           github_token: ${{ secrets.github_token }}
-          assignees: ${{ github.event.issue_comment.user.login }}
-      - name: Print GitHub context
-        run: echo "$GITHUB_CONTEXT"
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          assignees: ${{ github.triggering_actor }}
