@@ -9,7 +9,7 @@ body:
         Use this template to add new feature requests or feature enhancements to the Open edX Roadmap. Please note that creating a new request DOES NOT guarantee prioritization or implementation.
   - type: checkboxes
     attributes:
-      label: Is there an existing issue for this?
+      label: 1. Is there an existing issue for this?
       description: Please search to see if a feature request or roadmap item already exists for this request
       options:
         - label: I have searched the existing issues
@@ -17,14 +17,14 @@ body:
   - type: textarea
     id: newfeat
     attributes:
-      label: What new feature or functionality would you like to request?
+      label: 2. What new feature or functionality would you like to request?
       description: Please be as succinct as possible
     validations:
       required: true
   - type: dropdown
     id: area
     attributes:
-      label: What product area does this feature affect?
+      label: 3. What product area does this feature affect?
       options:
         - Credentials
         - Data
@@ -43,35 +43,35 @@ body:
   - type: textarea
     id: scope
     attributes:
-      label: Please describe the scope of the feature
+      label: 4. Please describe the scope of the feature
       description: In 1 - 2 sentences, what area(s) of the platform does this feature affect?
     validations:
       required: true
   - type: textarea
     id: need
     attributes:
-      label: Please describe why you see a need for this feature
+      label: 5. Please describe why you see a need for this feature
       description: In 1 - 2 sentences, describe who would use this feature. Why is this unique from existing features? Please cite market data where possible.
     validations:
       required: true
   - type: textarea
     id: vi
     attributes:
-      label: Please describe the potential impact and/or value of this feature
+      label: 6. Please describe the potential impact and/or value of this feature
       description: Describe succinctly (1-2 sentences) how this provides value to the Open edX community
     validations:
       required: true
   - type: textarea
     id: usec
     attributes:
-      label: Please provide 2-3 use cases and/or user stories in support of this feature
+      label: 7. Please provide 2-3 use cases and/or user stories in support of this feature
       description: If you'd like examples of how to write user stories, see [these example stories](https://docs.google.com/spreadsheets/d/1-SKV33_IdzNxESTTIQeerlN6FyGeqXgLE3tqebsxOGk/edit#gid=1959183385)
     validations:
       required: true
   - type: textarea
     id: addl
     attributes:
-      label: Any additional information you'd like to provide?
+      label: 8. Any additional information you'd like to provide?
       description: Links to external documents (for example, wiki pages, documents, or demos)      
     validations:
       required: false
