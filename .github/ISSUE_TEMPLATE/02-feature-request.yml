@@ -13,7 +13,7 @@ body:
       description: Please search to see if a feature request or roadmap item already exists for this request
       options:
         - label: I have searched the existing issues
-        required: true        
+          required: true
   - type: textarea
     id: newfeat
     attributes:
