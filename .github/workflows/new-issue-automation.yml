@@ -19,7 +19,7 @@ jobs:
             $URL \
             -H "Content-Type: application/json" \
             -H "Authorization: token $GITHUB_TOKEN" \
-            --data '{ "body": "Thanks for your submission, @openedx/open-edx-project-managers will review shortly." }'
+            --data '{ "body": "Thanks for your submission, @openedx/openedx-product-managers will review shortly." }'
 
 # For future Slack alerting
       # - name: Alert in Slack
