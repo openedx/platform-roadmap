@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         ## Open edX Roadmap Issue Submission
-        This template standardizes a method of representing all _**current, in-flight Initiatives and in-planning Initiatives**_ that will be contributed to the Open edX Platform. It is intended to provide a high-level overview of the scope of the work, the approach, the value-add, and the anticipated impact. It should be written in such a way that a newcomer who may be unfamiliar with the Open edX platform can quickly gain an understanding of the “what”, the “why” and the “how” of the Initiative.
+        This template standardizes a method of representing all _**current, in-flight Initiatives and in-planning Initiatives**_ that will be contributed to the Open edX Platform. It is intended to provide a high-level overview of the scope of the work, the approach, the value-add, and the anticipated impact. It should be written in such a way that a newcomer who may be unfamiliar with the Open edX platform can quickly gain an understanding of the “what”, the “why” and the “how” of the Initiative. See https://openedx.atlassian.net/wiki/spaces/COMM/pages/3875962884/How+to+submit+an+open+source+contribution+for+Product+Review for more detail.
   - type: textarea
     id: abstract
     attributes:
@@ -14,6 +14,12 @@ body:
       description: Brief summary of the goal of the Initiative and the intended outcome. For example, if the Initiative is intended to fix a problem or pain point, include a problem statement and the proposed solution. If the Initiative is a new feature or an enhancement, include a statement about how the new feature will improve the platform, and for whom the improvements are intended.
     validations:
       required: true
+  - type: input
+    id: proplink
+    attributes:
+      label: Detailed Product Proposal
+      description: Provide a link to your product proposal, if applicable
+      placeholder: Link to public page on Open edX wiki
   - type: textarea
     id: cb
     attributes:
@@ -55,7 +61,7 @@ body:
     attributes:
       label: Named Release
       description: First Named Release to include this initiative. Alphabetical named releases are generally cut in early April and early October. Based on the removal date, what named release would be the first without this code? Please reach out to the Build Test Release working group (#wg-build-test-release in Slack) if you're not sure. Use the letter, if you're not sure of the name.
-      placeholder: Nutmeg
+      placeholder: Teak
     validations:
       required: true
   - type: textarea
@@ -70,7 +76,7 @@ body:
     attributes:
       label: Proposed By
       description: Name of provider/organization
-      placeholder: tCRIL
+      placeholder: Axim
     validations:
       required: true
   - type: textarea
