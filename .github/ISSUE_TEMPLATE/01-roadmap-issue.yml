@@ -1,12 +1,12 @@
-name: Open edX Roadmap Issue Submission
-description: Use this template to add in-flight and in-planning Initiatives to the Open edX Roadmap
+name: Open edX Product Proposal Submission
+description: Choose this if you have an idea to propose, with a product proposal, for the Product Group to evaluate for potential addition to the Open edX Roadmap
 title: "Put Initiative Name Here"
 body:
   - type: markdown
     attributes:
       value: |
-        ## Open edX Roadmap Issue Submission
-        This template standardizes a method of representing all _**current, in-flight Initiatives and in-planning Initiatives**_ that will be contributed to the Open edX Platform. It is intended to provide a high-level overview of the scope of the work, the approach, the value-add, and the anticipated impact. It should be written in such a way that a newcomer who may be unfamiliar with the Open edX platform can quickly gain an understanding of the “what”, the “why” and the “how” of the Initiative. See https://openedx.atlassian.net/wiki/spaces/COMM/pages/3875962884/How+to+submit+an+open+source+contribution+for+Product+Review for more detail.
+        ## Open edX Product Proposal Submission
+        This template standardizes a method of representing all _**planned or proposed Initiatives, as well as current, in-flight Initiatives**_ that will be contributed to the Open edX Platform. It is intended to provide a high-level overview of the scope of the work, the approach, the value-add, and the anticipated impact. It should be written in such a way that a newcomer who may be unfamiliar with the Open edX platform can quickly gain an understanding of the “what”, the “why” and the “how” of the Initiative. See https://openedx.atlassian.net/wiki/spaces/COMM/pages/3875962884/How+to+submit+an+open+source+contribution+for+Product+Review for more detail.
   - type: textarea
     id: abstract
     attributes:
@@ -19,25 +19,25 @@ body:
     attributes:
       label: Detailed Product Proposal
       description: Provide a link to your product proposal, if applicable
-      placeholder: Link to public page on Open edX wiki
+      placeholder: Link to public page on the Open edX wiki
   - type: textarea
     id: cb
     attributes:
-      label: Context & Background
+      label: Context & Background (in brief, if a Product Proposal is linked above)
       description: Any relevant background information about the Initiative. What key pieces of information are important for newcomers to understand about the nature of the problem or pain point, the current user experience, etc.
     validations:
       required: true
   - type: textarea
     id: sa
     attributes:
-      label: Scope & Approach
+      label: Scope & Approach (in brief, if a Product Proposal is linked above)
       description: Outline the scope of the Initiative and a description of how the work is being done. Who is the primary persona, ie the primary beneficiary of this Initiative? If appropriate, please provide links or a description of market research or user feedback/input that has shaped the Initiative. Please include links to design documentation that may be relevant. If the Initiative is in the early Discovery phase, please describe the Discovery method/hypothesis being tested.
     validations:
       required: true
   - type: textarea
     id: vi
     attributes:
-      label: Value & Impact
+      label: Value & Impact (in brief, if a Product Proposal is linked above)
       description: Please include the metrics being used to measure success for the Initiative. How will the Open edX platform and/or experience be measurably better than before?
     validations:
       required: true
@@ -51,7 +51,7 @@ body:
         **Milestone 1**: [Title]
         * [1-2 sentence abstract. Include key user stories if appropriate]
         * [Impact metric]
-        * [Link to Epic where it may exist in GH, jira, etc]
+        * [Link to Epic where it may exist in GitHub]
 
         **Milestone 2**: etc...
     validations:
@@ -67,7 +67,7 @@ body:
   - type: textarea
     id: time
     attributes:
-      label: Timeline
+      label: Timeline (in brief, if a Product Proposal is linked above)
       description: Recognizing that many Initiatives evolve incrementally, please include a brief scope of the Initiative timeline. Please include a target Named Release, with contingencies if necessary.
     validations:
       required: true
