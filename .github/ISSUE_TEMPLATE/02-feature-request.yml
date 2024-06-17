@@ -1,12 +1,12 @@
 name: Open edX Feature Request
-description: Use this template to add new feature requests or feature enhancements to the Open edX Roadmap. Creating a new request DOES NOT guarantee prioritization or implementation.
+description: Choose this to express interest in an idea not already on the roadmap, that you do not have a proposal for. Creating a new request DOES NOT guarantee prioritization or implementation.
 title: "Put Feature Name Here"
 body:
   - type: markdown
     attributes:
       value: |
         ## Open edX Feature Request
-        Use this template to add new feature requests or feature enhancements to the Open edX Roadmap. Please note that creating a new request DOES NOT guarantee prioritization or implementation.
+        Choose this to express interest in an idea not already on the roadmap, that you don't have a proposal for. Please note that creating a new request DOES NOT guarantee prioritization or implementation.
   - type: checkboxes
     attributes:
       label: 1. Is there an existing issue for this?
@@ -26,6 +26,7 @@ body:
     attributes:
       label: 3. What product area does this feature affect?
       options:
+        - Courseware
         - Credentials
         - Data
         - Discussion forums
