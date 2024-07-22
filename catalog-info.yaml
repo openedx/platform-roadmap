@@ -9,6 +9,6 @@ metadata:
       icon: "Issue"
   annotations:
 spec:
-  owner: group: tcril-engineering
+  owner: "group:tcril-engineering"
   type: 'issue-tracker'
   lifecycle: 'production'
