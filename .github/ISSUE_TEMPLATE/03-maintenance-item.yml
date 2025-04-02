@@ -1,0 +1,39 @@
+name: Open edX Maintenance Roadmap Issue
+description: Choose this to track major coordinated upgrades across repos, and get them represented on the Open edX Roadmap
+title: "<Technology Name - Version> Upgrade"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Open edX Maintenance Roadmap Issue
+        Choose this to track major coordinated upgrades across repos, and get them represented on the Open edX Roadmap
+  - type: textarea
+    id: newfeat
+    attributes:
+      label: What technology is being upgraded? Describe the nature of the upgrade, criticality, and risks (if any).
+      description: Please be as succinct as possible
+    validations:
+      required: true
+  - type: input
+    id: upgrade-date
+    attributes:
+      label: Technology Upgrade Date
+      description: When is the target date for getting this technology upgraded?
+      placeholder: 9 October 2025
+    validations:
+      required: true
+  - type: input
+    id: named-release
+    attributes:
+      label: First Open edX Named Release With This Functionality
+      description: Named releases are generally CUT in early April and early October. Based on the above upgrade date, what named release would be the first with this code? Please reach out to the Build Test Release working group (#wg-build-test-release in Slack) if you're not sure.
+      placeholder: Teak
+    validations:
+      required: true
+  - type: textarea
+    id: addl
+    attributes:
+      label: Any additional information you'd like to provide?
+      description: Eg, links to external documents (for example, wiki pages, documents, or demos)      
+    validations:
+      required: false
