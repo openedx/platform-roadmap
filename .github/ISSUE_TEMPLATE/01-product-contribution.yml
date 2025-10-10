@@ -1,0 +1,49 @@
+name: Open edX Product Contribution
+description: Choose this to propose any change to the Open edX Platform — from small tweaks to major features that need review and alignment.
+title: "Ensure your title is clear and descriptive"
+labels: ["product proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Open edX Product Contribution
+        Use this form to propose any change to the Open edX Platform; from small, low-risk improvements (Fast Track Changes) to larger features (Product Proposals). See the [Product Contribution Guide](https://openedx.atlassian.net/wiki/spaces/COMM/pages/3875962884/How+to+submit+an+open+source+contribution+for+Product+Review) for more detail.
+  - type: dropdown
+    id: requesttype
+    attributes:
+      label: Type of Request
+      options:
+        - Fast Track Change (small, low-risk improvements)
+        - Product Proposal (larger features)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: featuredesc
+    attributes:
+      label: Feature Description
+      description: What is being proposed? (Copy the TL;DR from your proposal if you have one)
+    validations:
+      required: true
+  - type: input
+    id: proplink
+    attributes:
+      label: Link to Product Proposal
+      description: "**Required** for Product Proposals - **Optional** for Fast Track Changes"
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - New
+        - In Review
+      default: 0
+    validations:
+      required: True
+  - type: input
+    id: author
+    attributes:
+      label: Proposed By
+      description: Name of provider or organization
+    validations:
+      required: true
