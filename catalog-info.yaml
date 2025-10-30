@@ -8,6 +8,6 @@ metadata:
       title: "Issue Tracker"
       icon: "Issue"
 spec:
-  owner: "group:axim-engineering"
+  owner: "group:axim-admins"
   type: 'issue-tracker'
   lifecycle: 'production'
